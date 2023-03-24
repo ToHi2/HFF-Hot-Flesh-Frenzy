@@ -34,6 +34,7 @@
 <body onload="preloadScore()" bgcolor="black" text="white">
   <p><span>Kills:</span><span id="score">0</span></p>
   
+ <img id="fzman" src="/img/fzman.png" width="50px" style="position: absolute;top: 1px; left: 150px;">
   <img id="zman" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 10px;">
   
   <img id="zmana" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 80px;">
@@ -54,6 +55,7 @@
   <script>
   var myTimeout = setInterval('moveDown();moveDowna();moveDownb();moveDownc();moveDownd();gameOver()',20)
   </script>
+  <p id="fhp" hidden>1</p>
   <p id="hp" hidden>2</p>
   <p id="hpa" hidden>2</p>
   <p id="hpb" hidden>2</p>
