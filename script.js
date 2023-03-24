@@ -43,6 +43,11 @@ function moveDownd() {
   var cord = (a * 1) + 1;
   document.getElementById("zmand").style.top = cord + "px";
 }
+function moveDownf() {
+  var a = document.getElementById("zmand").offsetTop;
+  var cord = (a * 1) + 2;
+  document.getElementById("fzman").style.top = cord + "px";
+}
 function limitMk(){
   var p = document.getElementById("man").offsetLeft;
   if(p<10){
@@ -51,6 +56,7 @@ function limitMk(){
   if(p>290){
     document.getElementById('man').style.left="10px";
   }
+
 }
 
 function confSht(){
