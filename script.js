@@ -128,7 +128,7 @@ function confStat(){
       document.getElementById("zmand").className = "h";
     }
     if (fhp <= 0) {
-      document.getElementById("zmand").className = "h";
+      document.getElementById("fzman").className = "h";
     }
     if(hp<=0){
       setTimeout('showZ()',900)
@@ -165,7 +165,7 @@ if(hpd<=0){
       document.getElementById("hpd").innerHTML = "2";
     }
     if (fhp <= 0) {
-      document.getElementById("hpd").innerHTML = "1";
+      document.getElementById("fhp").innerHTML = "1";
     }
 }
 function showZ(){
