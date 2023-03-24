@@ -45,7 +45,7 @@ function moveDownd() {
 }
 function moveDownf() {
   var a = document.getElementById("fzman").offsetTop;
-  var cord = (a * 1) + 2;
+  var cord = (a * 1) + 3;
   document.getElementById("fzman").style.top = cord + "px";
 }
 function limitMk(){
@@ -165,7 +165,7 @@ if(hpd<=0){
       document.getElementById("hpd").innerHTML = "2";
     }
     if (fhp <= 0) {
-      document.getElementById("fhp").innerHTML = "1";
+      document.getElementById("fhp").innerHTML = "2";
     }
 }
 function showZ(){
