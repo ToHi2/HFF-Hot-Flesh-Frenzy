@@ -146,7 +146,7 @@ if(hpd<=0){
       setTimeout('showZd()',900)
     }
     if(fhp<=0){
-      setTimeout('showFz()',10000)
+      setTimeout('showFz()',5500)
     }
   
     if (hp <= 0) {
