@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  body{
+    background-image: url(/img/bg.png);
+    background-size: 400px;
+    height: 100vh;
+    background-position: 50% 1%;
+   background-repeat: no-repeat;
+   font-family: VT323;
+  }
+
+    button {
+     background-color: black;
+     color: white;
+     width: 100px;
+     font-family: VT323;
+    }
+.d{
+  
+}
+.h{
+  display: none;
+}
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="preloadScore()" bgcolor="black" text="white">
+  <p><span>Kills:</span><span id="score">0</span></p>
+  
+  <img id="zman" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 10px;">
+  
+  <img id="zmana" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 80px;">
+  
+  <img id="zmanb" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 150px;">
+  
+  <img id="zmanc" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 220px;">
+  
+  <img id="zmand" src="/img/zman.png" width="50px" style="position: absolute;top: 1px; left: 290px;">
+  <!end of zombies>
+  <img id="man" src="/img/man.png" width="50px" style="position: absolute;top: 390px; left: 10px;">
+  <span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+  <button onclick="moveLeft();limitMk()">L</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="moveRight();limitMk()">R</button><br><br><br>
+  <button onclick="confSht();confStat();shotEff();highScr()">Shoot</button>
+  </center></span>
+  
+  <script src="/script.js"></script>
+  <script>
+  var myTimeout = setInterval('moveDown();moveDowna();moveDownb();moveDownc();moveDownd();gameOver()',49)
+  </script>
+  <p id="hp" hidden>2</p>
+  <p id="hpa" hidden>2</p>
+  <p id="hpb" hidden>2</p>
+  <p id="hpc" hidden>2</p>
+  <p id="hpd" hidden>2</p>
+  <span id="pscore" hidden>0</span>
+</body>
+
+</html>
