@@ -46,10 +46,10 @@ function moveDownd() {
 function limitMk(){
   var p = document.getElementById("man").offsetLeft;
   if(p<10){
-    document.getElementById.left="290px";
+    document.getElementById('man').left="290px";
   }
   if(p>290){
-    document.getElementById.left="10px";
+    document.getElementById('man').left="10px";
   }
 }
 
